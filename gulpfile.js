@@ -26,7 +26,8 @@ gulp.task('scripts', function() {
 // Serve and watch for changes
 gulp.task('serve', function() {
     browserSync.init({
-        server: './'  // path to your project's root
+        server: './'  // path to your project's root this is for HTML version
+        
     });
 
     gulp.watch('src/scss/**/*.scss', gulp.series('styles'));
